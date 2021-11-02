@@ -15,7 +15,6 @@ import javax.swing.border.EmptyBorder;
 
 public class MyTetris extends JFrame {
 
-	private JPanel contentPane;
 	public static TetrisCanvas tetrisCanvas = new TetrisCanvas();
 
 	public static void main(String[] args) {
@@ -68,8 +67,8 @@ public class MyTetris extends JFrame {
 		
 		menu.add(mntmNewMenuItem_2);
 		menu.add(mntmNewMenuItem_1);
-		
-		contentPane = new JPanel();
+
+		JPanel contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
